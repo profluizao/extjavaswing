@@ -38,6 +38,10 @@ public class ClasseProdutoRepositorio
 
     @Override
     public List<ClasseProduto> ReadAll() {
+        return this.ReadAllAsArrayList();
+    }
+
+    public ArrayList<ClasseProduto> ReadAllAsArrayList(){
         ArrayList<ClasseProduto> lista = new ArrayList<>();
         for(Map.Entry<Long, ClasseProduto> par : this.dados.entrySet()){
             lista.add(par.getValue());
