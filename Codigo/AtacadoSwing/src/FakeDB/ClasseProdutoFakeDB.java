@@ -16,6 +16,10 @@ public class ClasseProdutoFakeDB extends BaseFakeDB<ClasseProduto>{
         return this.tabela;
     }
 
+    public ClasseProdutoFakeDB(){
+        super();
+    }
+
     @Override
     protected void CarregarDados() {
         this.tabela.put(1L, new ClasseProduto(1510L, "Carnes", LocalDate.now()));

@@ -10,6 +10,7 @@ public abstract class BaseFakeDB<TDominio> {
 
     public BaseFakeDB(){
         this.tabela = new HashMap<>();
+        this.CarregarDados();
     }
 
     protected abstract void CarregarDados();
