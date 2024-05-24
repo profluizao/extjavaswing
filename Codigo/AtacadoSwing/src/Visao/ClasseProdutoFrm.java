@@ -50,8 +50,4 @@ public class ClasseProdutoFrm extends JFrame {
         this.add(painel);
         this.setVisible(true);
     }
-
-    private void PrepararDados(){
-    }
-    
 }
